@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.divUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#search{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.divDown{
+    background-color: rgb(127, 231, 113);
+    min-width: 60%;
+    min-height: 50vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.div1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+.name{
+    font-size: 40px;
+    font-weight: 700;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 50px;
+}
+.div2-1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    gap: 20px;
+}
+.btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+    .divDown{
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+    .div1{
+        width: 80%;
+    }
+}
