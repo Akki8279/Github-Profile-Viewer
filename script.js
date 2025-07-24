@@ -6,6 +6,8 @@ function displayUser({avatar_url,name,followers,following,bio,public_repos,html_
         document.querySelector(".divDown").innerText = "This user does no exist";
         return;
     }
+    if(!bio)
+        bio = '';
     document.querySelector(".divDown").innerHTML = `
     <div class="div1">
         <img src=${avatar_url} alt="" id="img">
@@ -37,7 +39,8 @@ async function fun(x) {
     displayUser(result);
 }
 
-btn.addEventListener('click',()=>{
+btn.addEventListener('click',(e)=>{
+    e.preventDefault();
     fun(inp.value);
 })
 
